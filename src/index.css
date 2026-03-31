@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+    background: #fff8f0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #1a0a3c;
+    background-image: none;
+    color: #2C2C2C;
+    font-family: Nunito, Poppins, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::selection,
+  ::selection {
+    background: rgba(155, 93, 229, 0.22);
+    color: #2c2c2c;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img {
+    display: block;
+  }
+
+  * {
+    cursor: default;
+  }
+
+  button, a, [role="button"] {
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
