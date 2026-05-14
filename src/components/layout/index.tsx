@@ -385,6 +385,31 @@ export function Footer({ onOpenStaticPage }: { onOpenStaticPage: (page: StaticPa
           Disclaimer
         </button>
       </div>
+      <div className="mx-auto mt-8 max-w-7xl border-t border-white/15 px-4 pt-6 md:px-6">
+        <p className="text-center text-xs leading-relaxed text-white/65">
+          Design by{' '}
+          <a
+            href="https://truetwist.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#F4C430] underline decoration-white/30 underline-offset-2 transition hover:text-[#FFD93D] hover:decoration-[#F4C430]"
+          >
+            TrueTwist
+          </a>
+          <span className="mx-2 text-white/35" aria-hidden>
+            ·
+          </span>
+          Marketing by{' '}
+          <a
+            href="https://369network.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#F4C430] underline decoration-white/30 underline-offset-2 transition hover:text-[#FFD93D] hover:decoration-[#F4C430]"
+          >
+            369 Network
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
