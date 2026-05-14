@@ -337,7 +337,7 @@ export function Footer({ onOpenStaticPage }: { onOpenStaticPage: (page: StaticPa
   return (
     <footer className="relative mt-8 py-10" style={{ background: 'rgba(255,247,238,0.18)' }}>
       <div className="mx-auto grid max-w-7xl gap-8 px-4 text-center md:grid-cols-[1fr_auto_auto] md:items-center md:px-6 md:text-left">
-        <div>
+        <div className="md:text-left">
           <p className="font-heading text-xl text-white sm:text-2xl">{site.name}</p>
           <p className="mt-1 text-sm text-[#F4C430]">
             {site.city} • {site.motto}
@@ -362,7 +362,8 @@ export function Footer({ onOpenStaticPage }: { onOpenStaticPage: (page: StaticPa
           ))}
         </div>
       </div>
-      <div className="mx-auto mt-6 flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 md:justify-end md:px-6">
+
+      <div className="mx-auto mt-8 flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 md:justify-end md:px-6">
         <button
           type="button"
           onClick={() => onOpenStaticPage('about-us')}
@@ -384,6 +385,18 @@ export function Footer({ onOpenStaticPage }: { onOpenStaticPage: (page: StaticPa
         >
           Disclaimer
         </button>
+      </div>
+
+      <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 px-4 pt-6 md:px-6">
+        <div className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-6 text-sm text-white/80">
+          <a href="https://truetwist.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#F4C430] transition">
+            Design By <span className="font-semibold text-[#F4C430]">Trutwist</span>
+          </a>
+          <span className="hidden text-white/30 sm:inline">|</span>
+          <a href="https://369network.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#F4C430] transition">
+            Marketing By <span className="font-semibold text-[#F4C430]">369 Network</span>
+          </a>
+        </div>
       </div>
     </footer>
   );
