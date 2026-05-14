@@ -489,8 +489,7 @@ function ProgramsSection({ onOpenProgram }: { onOpenProgram: (title: (typeof pro
             const isSeniorKg = program.title === 'Senior KG';
 
             return (
-              <motion.button
-                type="button"
+              <motion.div
                 key={program.title}
                 initial={{ opacity: 0, scale: 0.85, y: 26 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -498,7 +497,7 @@ function ProgramsSection({ onOpenProgram }: { onOpenProgram: (title: (typeof pro
                 transition={{ duration: 0.5, delay: index * 0.1, type: 'spring', stiffness: 200, damping: 20 }}
                 whileHover={{ y: -12, scale: 1.02 }}
                 onClick={() => onOpenProgram(program.title)}
-                className="will-change-transform cursor-pointer border-0 bg-transparent p-0 text-left"
+                className="will-change-transform cursor-pointer border-0 bg-transparent p-0 text-left w-full"
               >
                 <div className="relative flex h-full min-h-[28rem] flex-col overflow-hidden rounded-[2.5rem] shadow-[0_24px_70px_rgba(31,41,55,0.18)]">
                   {/* Video full background */}
@@ -571,7 +570,7 @@ function ProgramsSection({ onOpenProgram }: { onOpenProgram: (title: (typeof pro
                     </div>
                   </div>
                 </div>
-              </motion.button>
+              </motion.div>
             );
           })}
         </div>
