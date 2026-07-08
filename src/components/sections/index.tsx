@@ -1478,8 +1478,8 @@ function ParentsMeetingSection() {
   return (
     <section className="relative px-4 py-16 sm:py-24 md:px-6 lg:py-32">
       <SectionTitle
-        title="Parent Partnership"
-        subtitle="Because the best learning happens when parents and teachers work together."
+        eyebrow="Parent Partnership"
+        title="Because the best learning happens when parents and teachers work together."
       />
 
       <div className="relative mx-auto mt-12 grid max-w-7xl items-start gap-10 lg:mt-16 lg:grid-cols-2 lg:gap-16">
@@ -1549,7 +1549,7 @@ function ParentsMeetingSection() {
                 { title: 'Regular Progress Updates', text: 'Monthly catch-ups to discuss your child’s development, strengths, and areas of growth.' },
                 { title: 'Guided Learning at Home', text: 'Tips and strategies for parents to continue the fun and learning in the home environment.' },
                 { title: 'A Listening Ear', text: 'We are always here to listen to your suggestions, feedback, and any concerns you might have.' }
-              ].map((item, index) => (
+              ].map((item) => (
                 <div key={item.title} className="flex gap-4 rounded-[1.5rem] border border-[#1A1A2E]/8 bg-gradient-to-r from-white to-[#FFF7CC] p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#F4C430]/20 text-[#FF9F1C]">
                     <CheckCircle2 className="h-5 w-5" />

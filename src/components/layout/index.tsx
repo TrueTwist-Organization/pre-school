@@ -386,17 +386,30 @@ export function Footer({ onOpenStaticPage }: { onOpenStaticPage: (page: StaticPa
           Disclaimer
         </button>
       </div>
-
-      <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 px-4 pt-6 md:px-6">
-        <div className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-6 text-sm text-white/80">
-          <a href="https://truetwist.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#F4C430] transition">
-            Design By <span className="font-semibold text-[#F4C430]">Trutwist</span>
+      <div className="mx-auto mt-8 max-w-7xl border-t border-white/15 px-4 pt-6 md:px-6">
+        <p className="text-center text-xs leading-relaxed text-white/65">
+          Design by{' '}
+          <a
+            href="https://truetwist.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#F4C430] underline decoration-white/30 underline-offset-2 transition hover:text-[#FFD93D] hover:decoration-[#F4C430]"
+          >
+            TrueTwist
           </a>
-          <span className="hidden text-white/30 sm:inline">|</span>
-          <a href="https://369network.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#F4C430] transition">
-            Marketing By <span className="font-semibold text-[#F4C430]">369 Network</span>
+          <span className="mx-2 text-white/35" aria-hidden>
+            ·
+          </span>
+          Marketing by{' '}
+          <a
+            href="https://369network.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#F4C430] underline decoration-white/30 underline-offset-2 transition hover:text-[#FFD93D] hover:decoration-[#F4C430]"
+          >
+            369 Network
           </a>
-        </div>
+        </p>
       </div>
     </footer>
   );
